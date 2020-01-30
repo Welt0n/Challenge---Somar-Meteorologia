@@ -24,7 +24,8 @@ Próximos passos inclui :
 
 
 
-Basta montar um repositório com app.py e consumer.py, rodar app.py. E então fazer os requests. As variaveis requeridas são :
+Basta montar um repositório com app.py, consumer.py e a pasta 'data' do repositório https://github.com/somarmeteorologia/challenge/tree/master/backend
+Rodar app.py. E então fazer os requests. As variaveis requeridas são :
 
 
   station, latitude, longidute => Usadas para a identificação da tabela.
