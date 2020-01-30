@@ -48,7 +48,7 @@ Basta rodar app.py e fazer os requests. As variaveis requeridas são :
     Dados de previsão : De 2019-09-11 à 2019-10-10.
     
     
-    A data atual é definida como 2019-09-11 como nos dados.
+    A data atual é definida como 2019-09-11 de acordo com os dados.
     
     
 
