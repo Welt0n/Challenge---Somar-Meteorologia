@@ -11,16 +11,30 @@ Próximos passos inclui :
   
 Basta rodar app.py e fazer os requests. As variaveis requeridas são :
 
+
   station, latitude, longidute => Usadas para a identificação da tabela.
+  
+  
   A API prioriza station e caso decida usar latitude, longitude, ela irá encontrar a estação mais proxima à coordenada dada.
   
   
   init_date, final_date, days => Usadas para definir o periodo.
+  
+  
   A API prioriza init_date e final_date caso dado. Formato da data é como em : 2019-08-12, "%Y-%m-%d"
+  
+  
   Os periodos disponíveis para consulta são : 
+  
+  
     Dados observados : De 2019-08-12 à 2019-09-10.
+    
+    
     Dados de previsão : De 2019-09-11 à 2019-10-10.
+    
+    
     A data atual é definida como 2019-09-11 como nos dados.
+    
     
 
 Exemplos de request:
