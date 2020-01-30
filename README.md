@@ -2,11 +2,22 @@
 API para o desafio da Somar Meteorologia
 
 Esta é a uma versão inicial. 
+
+
 Próximos passos inclui :
+
+
   Endpoint para consulta de estações e periodos disponíveis
+  
+  
   Endpoint para pesquisa de multiplas estações
+  
+  
   GraphQL
+  
+  
   Testes 
+  
   
   
 Basta rodar app.py e fazer os requests. As variaveis requeridas são :
