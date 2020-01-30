@@ -20,6 +20,10 @@ Próximos passos inclui :
   
   
   
+
+
+
+
 Basta rodar app.py e fazer os requests. As variaveis requeridas são :
 
 
