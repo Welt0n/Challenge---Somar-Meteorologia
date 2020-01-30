@@ -24,7 +24,7 @@ Próximos passos inclui :
 
 
 
-Basta montar um repositório com app.py, consumer.py e a pasta 'data' do repositório https://github.com/somarmeteorologia/challenge/tree/master/backend
+Basta montar um repositório com app.py, consumer.py, stations.csv e a pasta 'data' do repositório https://github.com/somarmeteorologia/challenge/tree/master/backend
 Rodar app.py. E então fazer os requests. As variaveis requeridas são :
 
 
