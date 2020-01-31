@@ -40,6 +40,9 @@ Rodar app.py. E então fazer os requests. As variaveis requeridas são :
   A API prioriza init_date e final_date caso dado. Formato da data é como em : 2019-08-12, "%Y-%m-%d"
   
   
+  O argumento days é usado para consultar 'days' numeros de dias para frente ou para trás em relação ao dia atual definido no endpoint 'forecast' e 'observed' respectivamente.
+  
+  
   Os periodos disponíveis para consulta são : 
   
   
