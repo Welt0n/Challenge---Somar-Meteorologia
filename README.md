@@ -1,69 +1,28 @@
-# Challenge---Somar-Meteorologia
-API para o desafio da Somar Meteorologia
+- Estrutura
+Temos dois arquivos e uma pasta: A pasta data com os arquivos.csv do desafio, app.py
+onde temos a aplicação rodando em flask e graphqlConsumer herdando o nome de
+ uma das especificações do desafio anterior.
 
-Esta é a uma versão inicial. 
+-Optei por fazem em Flask como nas recomendações por acreditar ser a forma mais simples
+de atacar o problema usando Python. O desafio serviu de grande aprendizado e praticamente
+todas as ferramentas que utilizei eu aprendi para o desafio.
+OS - foi usado para acessar os arquivos ao inves de usar uma database.
+Pandas - Usado para a extração dos dados
+Cerberus - Validação dos dados
+Graphene - Implementação do servidor GraphQL feita a posteriori.
 
+Como usar :
+  A aplicação em Flask tem dois endpoints : '/' e '/graphql'
+  No primeiro, pode ser feito query utilizando ?query="{}". Um exemplo deste
+  dicionário a ser enviado como string é apresentado em '/'.
 
-Próximos passos inclui :
+  Mas a interface grafíca do graphql está habilitada e pode ser usada com muita mais
+  facilidade em '/graphql'
 
-
-  Endpoint para consulta de estações e periodos disponíveis
-  
-  
-  Endpoint para pesquisa de multiplas estações
-  
-  
-  GraphQL
-  
-  
-  Testes 
-  
-  
-  
-
-
+  É necessario que a pasta 'data' esteja junto aos arquivos.py.
 
 
-Basta montar um repositório com app.py, consumer.py, stations.csv e a pasta 'data' do repositório https://github.com/somarmeteorologia/challenge/tree/master/backend
-Rodar app.py. E então fazer os requests. As variaveis requeridas são :
 
+Próximos passos :
 
-  station, latitude, longidute => Usadas para a identificação da tabela.
-  
-  
-  A API prioriza station e caso decida usar latitude, longitude, ela irá encontrar a estação mais proxima à coordenada dada.
-  
-  
-  init_date, final_date, days => Usadas para definir o periodo.
-  
-  
-  A API prioriza init_date e final_date caso dado. Formato da data é como em : 2019-08-12, "%Y-%m-%d"
-  
-  
-  O argumento days é usado para consultar 'days' numeros de dias para frente ou para trás em relação ao dia atual definido no endpoint 'forecast' e 'observed' respectivamente.
-  
-  
-  Os periodos disponíveis para consulta são : 
-  
-  
-    Dados observados : De 2019-08-12 à 2019-09-10.
-    
-    
-    Dados de previsão : De 2019-09-11 à 2019-10-10.
-    
-    
-    A data atual é definida como 2019-09-11 de acordo com os dados.
-    
-    
-
-Exemplos de request:
-
-http://localhost:5000/observed?station=Alegria-MG&days=10
-
-http://localhost:5000/observed?init_date=2019-08-16&final_date=2019-08-18&latitude=-16.08&longitude=-48.50
-
-http://localhost:5000/forecast?init_date=2019-09-12&final_date=2019-09-16&latitude=-16.08&longitude=-48.5
-
-http://localhost:5000/forecast?days=10&latitude=-16.08&longitude=-48.5
-
-
+  - Testes e deployment. (Travis CI)
