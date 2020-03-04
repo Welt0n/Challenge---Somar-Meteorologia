@@ -9,7 +9,11 @@ jobs:
           command: >
             echo "The command above installs Heroku, the command below deploys.
             What you do inbetween is up to you!"
+            heroku git:remote -a somar-challenge
+            heroku login
+
             pip install -r requirements.txt
+
       - heroku/deploy-via-git
 orbs:
   heroku: circleci/heroku@1.0.1
