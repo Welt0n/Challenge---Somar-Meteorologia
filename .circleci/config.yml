@@ -22,8 +22,8 @@ jobs:
       - run:
           name: Deploy to EB if branch is Master
           command: |
-            eb use challenge-dev --profile eb-cli
-            eb deploy -v --staged --profile eb-cli
+            eb use challenge-dev --profile eb-cli --region sa-east-1
+            eb deploy -v --staged --profile eb-cli --region sa-east-1
 
 workflows:
   version: 2
